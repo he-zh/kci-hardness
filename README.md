@@ -47,7 +47,7 @@ output:
 Part of the code is adopted and modified from
 ➡️ [romanpogodin/kernel-ci-testing](https://github.com/romanpogodin/kernel-ci-testing/tree/main)
 
-Please refer to that repository for the original implementation (without selecting C kernel) of kernel-based CI testing methods (KCI, KCI-split, CIRCE) and other baselines (GCM, RBPT).
+Please refer to that repository for the original implementation (without power maximization) of kernel-based CI testing methods (KCI, KCI-split, CIRCE) and other baselines (GCM, RBPT).
 
 ## Citation
 If you use this code in your research, please cite
