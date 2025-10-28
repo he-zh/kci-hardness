@@ -1,0 +1,45 @@
+data:
+    dataset: 'synthetic'
+    dim: &dim 3
+    fixed_size: 200
+    data_split_type: 'fixed_test_size' # fixed_train_size, fixed_test_size, proportional
+    ca_dim_idx: 0 
+    cb_dim_idx: 1 
+    cr_dim_idx: 2
+    alpha: 0.1
+    beta: 2.0
+model:
+    model_a: 'rbf'
+    model_b: 'rbf'
+    model_c: 'rbf'
+    model_ca: 'rbf'
+    model_cb: 'rbf'
+    epochs: 500
+    lr: 0.01
+    input_dim: *dim
+    gamma_c: 1.
+    gamma_ca: 1.
+    gamma_cb: 1.
+    ridge_lambda: 0.01
+    is_trainable_c: True
+    is_trainable_ca: True
+    is_trainable_cb: True
+    early_stopping: False
+    pval_approx_type: 'wild'
+    n_wild_bootstrap_samples: 1000
+    verbose: True
+experiment:
+    n_runs: 100
+output:
+    output_dir: 'results/'
+    save_results: True
+
+
+
+
+
+
+
+
+
+
