@@ -164,7 +164,7 @@ class KernelSelection:
         return statistic_value
 
 
-    def maximize_test_power(self, a, b, c, var_offset=0., quantile=0.95, uncertainty=0.5):
+    def maximize_test_power(self, a, b, c, var_offset=0., ):
         """
         Maximize the test power by learning the kernel parameters of the conditional independence test.
         """
@@ -188,14 +188,14 @@ class KernelSelection:
             if epoch%50 == 0 and self.verbose:
                 print(f"Epoch [{epoch + 1}/{self.epochs}]: kci_value = {kci_val.item():.4e}, "
                         f"kci_std = {kci_std.item():.4e}, Loss = {loss.item():.4e}, "
-                        f"Bandwidth = {torch.exp(self.kernel_c.kernel.log_gamma.data.reshape(-1)[0]):.4f}")
+                        f"Bandwidth[0] = {torch.exp(self.kernel_c.kernel.log_gamma.data.reshape(-1)[0]):.4f}")
 
         kci_val, kci_var = self.compute_statistic(a, b, c, return_matrices=False, return_var=True) # statistic_value, n_variance
         kci_std = torch.sqrt(kci_var+torch.tensor([var_offset], device=self.device))
 
         print(f"Final: kci_value = {kci_val.item():.4e}, "
                 f"kci_std = {kci_std.item():.4e}, "
-                f"Bandwidth = {torch.exp(self.kernel_c.kernel.log_gamma.data.reshape(-1)[0]):.4f}")
+                f"Bandwidth[0] = {torch.exp(self.kernel_c.kernel.log_gamma.data.reshape(-1)[0]):.4f}")
 
         self.kernel_c.eval()
 
