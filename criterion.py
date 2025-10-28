@@ -1,3 +1,9 @@
+"""
+Pytorch implementation of Leave-One-Out Criterion.
+Adapted from
+https://github.com/romanpogodin/kernel-ci-testing/blob/main/splitkci/cond_mean_estimation.py#L19
+"""
+
 import torch
 import torch.nn as nn
 from utils import add_diag

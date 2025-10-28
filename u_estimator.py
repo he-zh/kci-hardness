@@ -1,5 +1,12 @@
-from utils import add_diag
+"""
+Pytorch implementation of U-statistic estimator for HSIC.
+Adapted from
+https://github.com/romanpogodin/kernel-ci-testing/blob/main/splitkci/dependence_measures.py#L26
+"""
+
+
 import torch
+
 
 def compute_hsic(Kx, Ky, biased):
     n = Kx.shape[0]

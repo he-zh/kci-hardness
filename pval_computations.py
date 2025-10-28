@@ -1,9 +1,17 @@
+
+"""
+P-value computations for kernel-based independence tests.
+Adapted from https://github.com/romanpogodin/kernel-ci-testing/blob/main/splitkci/pval_computations.py
+"""
+
+
 import torch
 from scipy.stats import gamma as gamma_distr
 from scipy.stats import norm as norm_distr
 from numpy.linalg import eigh
 import numpy as np
 from u_estimator import compute_hsic
+
 
 def center_kernel_matrix(K):
     K = K - K.mean(axis=1, keepdims=True)
