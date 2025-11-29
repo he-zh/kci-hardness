@@ -49,6 +49,16 @@ Part of the code is adopted and modified from
 
 Please refer to that repository for the original implementation (without power maximization) of kernel-based CI testing methods (KCI, KCI-split, CIRCE) and other baselines (GCM, RBPT).
 
+## Citation
+If you find this repository helpful, please consider cite
+```
+@inproceedings{hehardness,
+  title={On the Hardness of Conditional Independence Testing In Practice},
+  author={He, Zheng and Pogodin, Roman and Li, Yazhe and Deka, Namrata and Gretton, Arthur and Sutherland, Danica J},
+  booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems},
+  year={2025}
+}
+```
 ## Contact
-For bugs or questions, feel free to raise an issue or contact zhhe@cs.ubc.ca . 
+For any questions, feel free to contact zhhe@cs.ubc.ca. 
 Thanks!
