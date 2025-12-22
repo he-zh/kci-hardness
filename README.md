@@ -1,5 +1,5 @@
 # kci-hardness
-Official code for the paper “[On the Hardness of Conditional Independence Testing In Practice](https://neurips.cc/virtual/2025/poster/117818)” (NeurIPS 2025 spotlight).
+Official code for the paper “[On the Hardness of Conditional Independence Testing In Practice](https://arxiv.org/abs/2512.14000)” (NeurIPS 2025 spotlight).
 
 This repository provides reproducible code for our experiments on the practical performance and limitations of kernel-based conditional independence (KCI) tests under various synthetic data settings.
 
@@ -52,7 +52,7 @@ Please refer to that repository for the original implementation (without power m
 ## Citation
 If you find this repository helpful, please consider cite
 ```
-@inproceedings{hehardness,
+@inproceedings{hehardness2025,
   title={On the Hardness of Conditional Independence Testing In Practice},
   author={He, Zheng and Pogodin, Roman and Li, Yazhe and Deka, Namrata and Gretton, Arthur and Sutherland, Danica J},
   booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems},
