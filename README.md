@@ -1,8 +1,11 @@
 # kci-hardness
 Official code for the paper “[On the Hardness of Conditional Independence Testing In Practice](https://arxiv.org/abs/2512.14000)” (NeurIPS 2025 spotlight).
 
-This repository provides reproducible code for our experiments on the practical performance and limitations of kernel-based conditional independence (KCI) tests under various synthetic data settings.
+This repository provides implementation of the experiments and methods described in the paper, including kernel-based conditional independence (KCI) testing, regression estimation procedures, and kernel selection strategies.
 
+For a high-level overview of the main ideas, intuition behind the impossibility result, and practical recommendations for applying CI tests in real-world settings, see the accompanying blog post:
+
+📝 [Why testing conditional independence is so hard?](https://he-zh.github.io/blog/2025/ci-hardness/)
 
 ## Requirements
 
